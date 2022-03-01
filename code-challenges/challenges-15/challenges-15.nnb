@@ -24,7 +24,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function equalizeArray(arr) {\n    // Write your code here\n    let obj = {}\n    for(let i of arr){\n        if(obj[i]){\n            obj[i]++\n        }else{\n            obj[i] = 1\n        }\n    }\n    const ArrayValues = Object.values(obj)\n    const max = Math.max(...ArrayValues)\n    return arr.length - max\n}"
             ],
             "outputs": []
         },
@@ -45,7 +45,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function howManyGames(p, d, m, s) {\n    // Return the number of games you can buy\nlet totalCost = p;\n  let gameCount = 0;\n  \n  while(totalCost <= s){\n    p = p - d;\n    if(p <= m){\n      totalCost = totalCost + m;\n      gameCount++;\n    }else{\n      totalCost = totalCost + p;\n      gameCount++;\n    }\n    \n  }\n  \n  return gameCount;\n}"
             ],
             "outputs": []
         },
@@ -59,7 +59,7 @@
         {
             "language": "javascript",
             "source": [
-                ""
+                "function squares(a, b) {\n    // Write your code here\nvar lower = Math.ceil(Math.sqrt(a))\nvar higher = Math.floor(Math.sqrt(b))\nif(lawer > higher)\nreturn 0\nvar count = 0 ; \nfor(var i = lower ; i<=higher ;i++){\n    if(lower <= i*i<=higher){\n        count++\n    }\n  }\n  return count ;\n}\n"
             ],
             "outputs": []
         }
